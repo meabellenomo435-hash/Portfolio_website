@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --h1-font-size: 2.85rem;
+    --h2-font-size: 2.25rem;
+    --h3-font-size: 1.97rem;
+    --h4-font-size: 1.43rem;
+    --h5-font-size: 1.13rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #060F22;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.mea-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mea-header {
+    z-index: 1100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    transition: .3s ease;
+}
+
+.mea-header .inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mea-logo a {
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.mea-logo a:hover {
+    color: #214aa1;
+}
+
+.header-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.contact-me-icon {
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.contact-me-icon:hover {
+    color: #214aa1;
+}
+
+.mea-main-btn {
+    width: fit-content;
+    padding: 14px 30px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.mea-main-btn:hover {
+    color: white;
+    background: #214aa1;
+    border: 2px solid #214aa1;
+}
+
+.mea-main-btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.07rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.mea-main-btn:hover a {
+    color: white;
+}
+
+.border-btn {
+    border: 2px solid white;
+}
+
+.theme-btn {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 27px;
+    cursor: pointer;
+}
+
+.theme-btn i {
+    position: absolute;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.theme-btn:hover {
+    color: #214aa1;
+    transform: rotate(-15deg);
+}
+
+.theme-btn .moon-icon {
+    display: none;
+}
+
+/*bottom nav*/
+.bottom-nav-container {
+    position: relative;
+}
+
+.bottom-nav {
+    z-index: 1100;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+
+.bottom-nav .inner {
+    padding: relative;
+}
+
+.bottom-nav .menu {
+    background: #0c1b3b;
+    backdrop-filter: blur(10px);
+    padding: 16px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-radius: 50px;
+}
+
+.bottom-nav .menu li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu ul,
+li {
+    list-style: none;
+}
+
+.bottom-nav .menu li a i {
+    color: white;
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.bottom-nav .menu li:hover a i {
+    color: white;
+    background: #214aa1;
+}
