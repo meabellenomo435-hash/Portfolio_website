@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: aquamarine;
+    background-color: #060F22;
     font-family: 'Inter', sans-serif;
     transition: .3s;
     color: #C4C4C4;
@@ -363,3 +363,4 @@ li {
     margin-bottom: 35px;
 
 }
+
