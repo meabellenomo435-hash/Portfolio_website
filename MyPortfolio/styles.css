@@ -14,16 +14,24 @@ html {
 
 body {
     background-color: #060F22;
+    font-family: 'Inter', sans-serif;
+    transition: .3s;
+    color: #C4C4C4;
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
+}
+
+a {
+    color: #3A9AFF;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*reusable Styles*/
-a {
-    text-decoration: none;
-}
 
 .page-section {
     position: relative;
@@ -43,14 +51,14 @@ a {
 }
 
 .fill-btn {
-   
-    background: #3A9AFF;
+    background: #1774d8;
     border: 2px solid #3A9AFF;
 }
 
-.fill-btn a {
-    color: #0c1b3b;
+.fill-btn:hover {
+    border: 2px solid #3A9AFF;
 }
+
 /*header*/
 .page-header {
     z-index: 1100;
@@ -91,7 +99,6 @@ a {
 .contact-me-icon {
     color: white;
     font-size: 1.8rem;
-    cursor: pointer;
     transition: .3s;
     display: none;
 }
@@ -153,7 +160,7 @@ a {
 }
 
 .theme-btn .moon-icon {
-    display: none;
+    display: none; 
 }
 
 /*bottom nav*/
@@ -181,8 +188,8 @@ a {
     justify-content: center;
     align-items: center;
     column-gap: 25px;
-    border-bottom: 1px solid;
-    border-left: 1px solid;
+    border-bottom: 0.1px solid;
+    border-left: 0.1px solid;
     border-radius: 50px;
 }
 
@@ -322,5 +329,37 @@ li {
 
 .home-social .social-icons li a:hover {
     color: #3A9AFF;
+
+}
+
+.profile-container .hire-btn-01 {
+    display: none;
+}
+
+.profile-info {
+    position: relative;
+}
+
+.profile-info .text-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.profile-info .hello-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.profile-info .name-text {
+    font-weight: 700;
+    font-size: var(--h1-font-size);
+    color: white;
+}
+
+.profile-info .what-I-do {
+    font-size: var(--base-font-size);
+    font-weight: 600;
+    margin-bottom: 35px;
 
 }
